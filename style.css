@@ -1,11 +1,24 @@
 
-            .past {
-                background:"blue"
-            }
-            .current {
-                background: red;
-            }
-            .future {
-                background: green;
-            }
        
+       #header,ul,#textboxList{
+           text-align: center;
+           list-style: none;
+           padding: 10px;
+           
+          
+     }
+       
+      #header{
+          background-color: burlywood;
+      }
+
+      li{
+        margin:20px; 
+        padding: 10px;
+        width: 100%;
+        
+      }
+      #textboxList{
+          background-color: darkblue;
+          
+      }

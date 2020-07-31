@@ -1,42 +1,57 @@
 
-     
-        $("button").on("click",function(){ 
-            var timeId=$(this).attr("time");
-            var userTask=$(timeId).val();
-            localStorage.setItem(timeId,userTask);
-        });
+$(document).ready(function () {
+  $("#currentDate").append(moment().format("MM/DD/YYYY"));
+ 
+});
 
-        var nineAm=localStorage.getItem("#9am");
-        if(nineAm) {
-            $("#9am").val(nineAm);
-        }
+$("button").on("click",function(){ 
+  var timeId=$(this).attr("time");
+  var userTask=$(timeId).val();
+  localStorage.setItem(timeId,userTask);
+});
 
-        for(var i=9;i<17;i++) {
-            // Get the current hour
+var nineAm=localStorage.getItem("#9am");
+if(nineAm) {
+  $("#9am").val(nineAm);
+}
 
-            var amPm="am";
-            if(i>=12) {
-                amPm="pm";
-            }
-            var hour=i;
-            if(i>12) {
-                hour-=12;
-            }
+for(var i=9;i<17;i++) {
+  // Get the current hour
 
-            var targetId="#"+hour+amPm;
+  var amPm="am";
+  if(i>=12) {
+      amPm="pm";
+  }
+  var hour=i;
+  if(i>12) {
+      hour-=12;
+  }
 
-            var className="future";
-            // If currentTime > i => class future
-            // else if currentTime < i class past
-            // else class current
+  var targetId="#"+hour+amPm;
 
-            $(targetId).addClass(className);
+  var className="future";
+  // If currentTime > i => class future
+  // else if currentTime < i class past
+  // else class current
+
+  $(targetId).addClass(className);
 
 
-        }
+}
 
-        /// Moment JS examples
-        console.log(moment().format("MM/DD/YYY"));
-        console.log(moment().format("HH:mm A"));
-        console.log(moment().format("h:mm a"));
-    
+/// Moment JS examples
+console.log(moment().format("MM/DD/YYY"));
+console.log(moment().format("HH:mm A"));
+console.log(moment().format("h:mm a"));
+  // current date
+  
+
+/// Moment JS examples
+console.log(moment().format("MM/DD/YYY"));
+//miltairy time
+console.log(moment().format("HH:mm A"));
+//12hr clock
+console.log(moment().format("h:mm a"));
+
+
+  

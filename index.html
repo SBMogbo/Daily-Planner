@@ -6,21 +6,82 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
   <script src="script.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+         .past {
+                background:"blue"
+            }
+            .current {
+                background: red;
+            }
+            .future {
+                background: green;
+            }
+  </style>
   <title>Daily Scheduler</title>
 </head>
 
 <body>
-  <ul>
-    <li>
-      <span>9 AM</span>
-      <input type="text" id="9am" />
-      <button time="#9am">Save</button>
-    </li>
-    <li>
-      <input type="text" id="10am" />
-      <button time="#10am">Save</button>
-    </li>
-  </ul>
+  <div id="header">
+    <h1> Work Day Scheduler</h1>
+    <p>A simple daily scheduler</p>
+    <span id="currentDate"></span>
+  </div>
+  <div  id="textboxList">
+    <ul>
+      <li>
+        <span>9 AM</span>
+        <input style="width:75%"type="text" id="9am" />
+        <button time="#9am">Save</button>
+      </li>
+      <li>
+        <span>10 AM</span>
+        <input style="width:75%" type="text" id="10am" />
+        <button time="#10am">Save</button>
+      </li>
+      <li>
+        <span>11 AM</span>
+        <input style="width:75%" type="text" id="11am" />
+        <button time="#11am">Save</button>
+      </li>
+      <li>
+        <span>12 PM</span>
+        <input style="width:75%"type="text" id="12pm" />
+        <button time="#12pm">Save</button>
+      </li>
+      <li>
+        <span>1 PM</span>
+        <input style="width:75%" type="text" id="1pm" />
+        <button time="#1pm">Save</button>
+      </li>
+      <li>
+        <span>2 PM</span>
+        <input style="width:75%" type="text" id="2pm" />
+        <button time="#2pm">Save</button>
+      </li> 
+      <li>
+        <span>3 PM</span>
+        <input style="width:75%" type="text" id="3pm" />
+        <button time="#3pm">Save</button>
+      </li>
+      <li>
+        <span>4 PM</span>
+        <input style="width:75%" type="text" id="4pm" />
+        <button time="#4pm">Save</button>
+      </li>
+      <li>
+        <span>5 PM</span>
+        <input style="width:75%" type="text" id="5pm" />
+        <button time="#5pm">Save</button>
+      </li>
+      <li>
+        <span>6 PM</span>
+        <input style="width:75%" type="text" id="6pm" />
+        <button time="#6pm">Save</button>
+      </li>
+      
+    </ul>
+  </div>
+  
 
 </body>
 
